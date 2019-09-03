@@ -2,6 +2,7 @@ import { Component, OnInit, Input } from '@angular/core';
 import { MenuModel } from '../menu-item/menu.model';
 import { CartService } from './cart.service';
 import { CartModel } from './cart.model';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'mt-cart',
@@ -9,6 +10,7 @@ import { CartModel } from './cart.model';
   styleUrls: ['./cart.component.css']
 })
 export class CartComponent implements OnInit {
+
 
   constructor(private cartService: CartService) { }
 
@@ -31,5 +33,9 @@ export class CartComponent implements OnInit {
   }
   addItem(item: any) {
     this.cartService.addItem(item);
+  }
+  constructor() { }
+
+  ngOnInit() {
   }
 }

@@ -20,6 +20,7 @@ import { ReviewComponent } from './restaurant-info/review/review.component';
 import { CartService } from './restaurant-info/cart/cart.service';
 
 
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -41,6 +42,8 @@ import { CartService } from './restaurant-info/cart/cart.service';
     AppRoutingModule
   ],
   providers: [RestaurantService, CartService, {provide: LOCALE_ID, useValue: 'pt-BR'}],
+
+  providers: [RestaurantService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
