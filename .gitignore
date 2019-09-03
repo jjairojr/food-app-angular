@@ -7,7 +7,7 @@
 # dependencies
 /node_modules
 /bower_components
-
+/editorconfig
 # IDEs and editors
 /.idea
 /.vscode
@@ -33,3 +33,9 @@ testem.log
 #System Files
 .DS_Store
 Thumbs.db
+
+#package-json
+/package-lock.json
+
+
+/backend
