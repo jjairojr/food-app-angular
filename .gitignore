@@ -7,7 +7,7 @@
 # dependencies
 /node_modules
 /bower_components
-
+/editorconfig
 # IDEs and editors
 /.idea
 /.vscode
@@ -36,3 +36,6 @@ Thumbs.db
 
 #package-json
 /package-lock.json
+
+
+/backend
